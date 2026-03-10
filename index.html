@@ -125,7 +125,9 @@
     .coming-soon-chip { display: inline-block; background: rgba(184,151,61,0.2); color: var(--gold); font-size: 0.78rem; font-weight: 700; letter-spacing: 1px; padding: 5px 14px; border-radius: 20px; margin-top: 12px; border: 1px solid rgba(184,151,61,0.4); }
 
     /* AREAS */
-    .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px; }
+    .areas-grid-centered { display: flex; justify-content: center; margin-top: 48px; }
+    .areas-grid-centered .area-card { max-width: 360px; width: 100%; }
+    .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
     .area-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; transition: border-color .2s; }
     .area-card:hover { border-color: var(--gold); }
     .area-icon { font-size: 1.8rem; margin-bottom: 12px; }
@@ -240,7 +242,7 @@
         <p>I work specifically with couples to break that pattern. Not with a generic spreadsheet, but by helping you talk about money without it turning into an argument, get clear on where you actually stand, and build a shared plan you both believe in.</p>
         <p>The silent score-keeping stops. The avoidance stops. You start moving in the same direction — as a team.</p>
         <div class="sell-peace">
-          <div class="sp-line1">I sell peace. They buy discipline.</div>
+          <div class="sp-line1">I sell peace. You buy discipline.</div>
           <div class="sp-line2">Financial clarity is not passive. It demands tradeoffs. The couples who do the work get the results.</div>
         </div>
       </div>
@@ -256,6 +258,13 @@
       <div class="divider"></div>
       <h2 class="section-title">Every Area of Your Financial Life — Together</h2>
       <p class="section-sub">Couples coaching covers the full picture — because money touches every part of your relationship.</p>
+    </div>
+    <div class="areas-grid-centered">
+      <div class="area-card">
+        <div class="area-icon">🤝</div>
+        <h4>Alignment on Finances</h4>
+        <p>Get on the same page about money — your values, priorities, and shared vision — so every financial decision moves you closer as a couple.</p>
+      </div>
     </div>
     <div class="areas-grid">
       <div class="area-card">
