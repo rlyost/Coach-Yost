@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://coach.yost.group/sitemap.xml
+Sitemap: https://www.yost.group/sitemap.xml
