@@ -144,6 +144,12 @@
     .sdvosb-advantage h3 { font-family: 'Playfair Display', serif; font-size: 1.7rem; color: var(--white); margin-bottom: 16px; }
     .sdvosb-advantage p { color: #9ab5cc; font-size: 0.97rem; max-width: 620px; margin: 0 auto 32px; line-height: 1.75; }
     .sdvosb-advantage img { height: 110px; width: auto; opacity: 0.92; }
+    .contract-data { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 36px; text-align: left; }
+    .contract-item { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 18px 20px; }
+    .contract-item .c-label { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+    .contract-item .c-value { font-size: 0.92rem; color: var(--white); font-weight: 500; line-height: 1.4; }
+    .naics-list { font-size: 0.82rem; color: #9ab5cc; margin-top: 4px; line-height: 1.5; }
+    @media (max-width: 768px) { .contract-data { grid-template-columns: 1fr; } }
 
     /* PROCESS */
     .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 60px; position: relative; }
@@ -341,6 +347,7 @@
           <li><span class="cred-icon">🎖️</span> U.S. Army Veteran — Service Disabled</li>
           <li><span class="cred-icon">📜</span> PMP — Project Management Professional</li>
           <li><span class="cred-icon">🏢</span> SBA SDVOSB Certified since 2009</li>
+          <li><span class="cred-icon">🔐</span> Active Secret Clearance</li>
           <li><span class="cred-icon">📍</span> Nationwide engagements, remote and on-site</li>
         </ul>
         <a href="mailto:info@yost.group" target="_blank" rel="noopener noreferrer" class="btn-primary">Contact Rick</a>
@@ -352,6 +359,29 @@
       <h3>SDVOSB Set-Aside Eligible</h3>
       <p>Yost Group LLC is certified by the SBA as a Service Disabled Veteran Owned Small Business. Federal agencies and prime contractors seeking to meet SDVOSB contracting goals can engage Yost Group through set-aside and sole-source vehicles.</p>
       <img src="resources/sba-badge.jpg" alt="SBA Service-Disabled Veteran-Owned Certified" />
+      <div class="contract-data">
+        <div class="contract-item">
+          <div class="c-label">UEI</div>
+          <div class="c-value">VU7MCYNKN5J4</div>
+        </div>
+        <div class="contract-item">
+          <div class="c-label">CAGE Code</div>
+          <div class="c-value">10BJ0</div>
+        </div>
+        <div class="contract-item">
+          <div class="c-label">Clearance</div>
+          <div class="c-value">Secret (Active)</div>
+        </div>
+        <div class="contract-item" style="grid-column: 1 / -1;">
+          <div class="c-label">Primary NAICS Codes</div>
+          <div class="c-value">541618 · Other Management Consulting Services</div>
+          <div class="naics-list">541611 · Administrative Management &amp; General Management Consulting<br>541614 · Process, Physical Distribution &amp; Logistics Consulting<br>541690 · Other Scientific &amp; Technical Consulting Services</div>
+        </div>
+        <div class="contract-item" style="grid-column: 1 / -1;">
+          <div class="c-label">Contact</div>
+          <div class="c-value"><a href="mailto:info@yost.group" style="color: var(--gold); text-decoration: none;">info@yost.group</a></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -401,12 +431,16 @@
       <div class="value">info@yost.group</div>
     </div>
     <div class="cta-detail-item">
-      <div class="label">LinkedIn</div>
-      <div class="value">linkedin.com/in/ryostpmp</div>
+      <div class="label">UEI</div>
+      <div class="value">VU7MCYNKN5J4</div>
+    </div>
+    <div class="cta-detail-item">
+      <div class="label">CAGE Code</div>
+      <div class="value">10BJ0</div>
     </div>
     <div class="cta-detail-item">
       <div class="label">Certifications</div>
-      <div class="value">PMP · SDVOSB · SBA Certified</div>
+      <div class="value">PMP · SDVOSB · Secret Clearance</div>
     </div>
   </div>
 </section>
